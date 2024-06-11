@@ -1,0 +1,59 @@
+* {
+    box-sizing: border-box;
+    margin: 0rem;
+}
+
+body{
+    position: relative;
+    min-height: 100vh;
+    display:flex;
+    flex-direction: column;
+}
+
+.title{
+    background-color: rgb(146, 6, 146);
+    min-height: 10rem;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: white;
+    width:100%;
+    padding:1rem;
+}
+
+.responsive{
+    min-height:10vh;
+    background-color: hotpink;
+
+}
+aside{
+    min-width: 30vw;
+}
+
+.right{
+    background-color: lightpink;
+}
+
+.left{
+    display:flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+footer{
+    min-height: 10vh;
+    background-color: rgb(155, 147, 148);
+}
+
+@media screen and (max-width:600px){
+    main{
+        flex-direction:column;
+        gap:10vh;
+    }
+
+    .right{
+        min-height: 10vh;
+    }
+}
